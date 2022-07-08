@@ -12,45 +12,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form id="ratingForm" class="card">
-    <figure>
-      <img src="/icon-star.f1cc0bfa.svg" alt="Little decorative yellow star">
-    </figure>
-    <h1>How did we do?</h1>
-    <p>Let us know how we did with your <strong>support request</strong>. All <strong>feedback</strong> is appreciated to help us improve our offering!</p>
-    <div class="contenedor">
-      <button type="button"><label for="1">1</label></button>
-      <input type="radio" name="value" id="1" value="1">
-      
-      <button type="button"><label for="2">2</label></button>
-      <input type="radio" name="value" id="2" value="2">
-      
-      <button type="button"><label for="3">3</label></button>
-      <input type="radio" name="value" id="3" value="3">
-      
-      <button type="button"><label for="4">4</label></button>
-      <input type="radio" name="value" id="4" value="4">
-      
-      <button type="button"><label for="5">5</label></button>
-      <input type="radio" name="value" id="5" value="5">
-    </div>
-    <button type="submit">Submit</button>
-    <div id="messageError">
-      <p>It seems like you didn't give us some feedback, please give us some feedback (⌣̩̩́_⌣̩̩̀)</p>
-    </div>
-  </form>
-  <article class="card inactive">
-    <figure>
-      <img src="/illustration-thank-you.27395aff.svg" alt="Thank you image">
-    </figure>
-    <p>You selected <span id="userRate"><!-- Add rating here --></span> out of 5</p>
-    <h2>Thank you!</h2>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-  </article>  
-  <footer>
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
-    <p>Coded by <a href="https://github.com/Renzo-Guerra">Renzo Guerra</a>.</p>
-  </footer>
+  <section class="sectionFull">
+    <form id="ratingForm" class="card">
+      <figure>
+        <img src="./icon-star.f1cc0bfa.svg" alt="Little decorative yellow star">
+      </figure>
+      <h1>How did we do?</h1>
+      <p>Let us know how we did with your <strong>support request</strong>. All <strong>feedback</strong> is appreciated to help us improve our offering!</p>
+      <div class="contenedor">
+        <button type="button"><label for="1">1</label></button>
+        <input type="radio" name="value" id="1" value="1">
+        
+        <button type="button"><label for="2">2</label></button>
+        <input type="radio" name="value" id="2" value="2">
+        
+        <button type="button"><label for="3">3</label></button>
+        <input type="radio" name="value" id="3" value="3">
+        
+        <button type="button"><label for="4">4</label></button>
+        <input type="radio" name="value" id="4" value="4">
+        
+        <button type="button"><label for="5">5</label></button>
+        <input type="radio" name="value" id="5" value="5">
+      </div>
+      <button type="submit">Submit</button>
+      <div id="messageError" class="inactive">
+        <p>It seems like you didn't give us some feedback, please give us some feedback (⌣̩̩́_⌣̩̩̀)</p>
+      </div>
+    </form>
+    <article id="thankYouCard" class="card inactive">
+      <figure>
+        <img src="./illustration-thank-you.27395aff.svg" alt="Thank you image">
+      </figure>
+      <p>You selected <span id="userRate"></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </article>  
+    <footer>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+      <p>Coded by <a href="https://github.com/Renzo-Guerra">Renzo Guerra</a>.</p>
+    </footer>
+  </section>
   <script src="js/main.js" defer=""></script>
 </body>
 </html>
