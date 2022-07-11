@@ -1,4 +1,7 @@
 node_modules/
 src/
 .parcel-cache/
-*.map
+.map
+*.config.js
+.babelrc
+.browserslistrc
